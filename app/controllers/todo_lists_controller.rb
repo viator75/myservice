@@ -1,4 +1,11 @@
 class TodoListsController < ApplicationController
+  # ---------------
+  # devise
+  # ---------------
+  before_filter :authenticate_user!
+  # ---------------
+  # devise
+  # ---------------
   before_action :set_todo_list, only: [:show, :edit, :update, :destroy]
 
   # GET /todo_lists
