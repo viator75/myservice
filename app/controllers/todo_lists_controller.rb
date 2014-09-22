@@ -2,7 +2,7 @@ class TodoListsController < ApplicationController
   # ---------------
   # devise
   # ---------------
-  before_filter :authenticate_user!
+  # before_filter :authenticate_user!
   # ---------------
   # devise
   # ---------------
