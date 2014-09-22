@@ -1,0 +1,8 @@
+<h1><%= @todo_list.name %></h1>
+<p>Find me in app/views/todo_items/index.html.erb</p>
+<ul>
+<%= @todo_list.todo_items.each do |todo_item| %>
+	<li><%= todo_item.project %></li>
+<% end %>
+</ul>
+<%= link_to "新增內容", new_todo_list_todo_item_path %>
