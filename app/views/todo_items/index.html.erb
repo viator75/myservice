@@ -1,6 +1,8 @@
 <h1><%= @todo_list.name %></h1>
 <p>Find me in app/views/todo_items/index.html.erb</p>
 <ul>
+
+<!-- 這裡不知道為什麼錯了？ -->
 <%= @todo_list.todo_items.each do |todo_item| %>
 	<li><%= todo_item.project %></li>
 <% end %>
